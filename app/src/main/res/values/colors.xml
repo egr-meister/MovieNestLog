@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paper_background">#F7F1E7</color>
+    <color name="marquee_burgundy">#7A263A</color>
+    <color name="ticket_cream">#FFF9F0</color>
+    <color name="brass_detail">#B58A46</color>
+    <color name="ink_black">#22201E</color>
+    <color name="ic_launcher_background">#7A263A</color>
+    <color name="dark_background">#181412</color>
+</resources>

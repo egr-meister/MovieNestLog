@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base app theme. Compose provides the real UI theming; this mainly
+         controls the window background and system bar colors. -->
+    <style name="Theme.MovieNestLog" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper_background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Static launch theme shows the custom splash background before Compose loads. -->
+    <style name="Theme.MovieNestLog.Starting" parent="Theme.MovieNestLog">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

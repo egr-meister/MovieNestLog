@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Cinema ticket body (rounded) within the adaptive safe zone -->
+    <path
+        android:fillColor="#F5E4C8"
+        android:pathData="M30,40 h48 a4,4 0 0 1 4,4 v20 a4,4 0 0 1 -4,4 h-48 a4,4 0 0 1 -4,-4 v-20 a4,4 0 0 1 4,-4 z" />
+
+    <!-- Side perforation notches (drawn in background burgundy to look carved) -->
+    <path
+        android:fillColor="#7A263A"
+        android:pathData="M26,54 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+    <path
+        android:fillColor="#7A263A"
+        android:pathData="M82,54 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
+
+    <!-- Dashed inner separator -->
+    <path
+        android:fillColor="#B58A46"
+        android:pathData="M40,44 h3 v20 h-3 z M47,44 h3 v20 h-3 z" />
+
+    <!-- Five-point star stamp -->
+    <path
+        android:fillColor="#7A263A"
+        android:pathData="M64,47 l2.4,4.9 l5.4,0.8 l-3.9,3.8 l0.9,5.4 l-4.8,-2.5 l-4.8,2.5 l0.9,-5.4 l-3.9,-3.8 l5.4,-0.8 z" />
+
+    <!-- Shelf line beneath the ticket -->
+    <path
+        android:fillColor="#4A3028"
+        android:pathData="M24,72 h60 v3 h-60 z" />
+</vector>
