@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Movie
 import androidx.compose.material.icons.filled.Tv
 import androidx.compose.material3.Icon
@@ -183,7 +184,7 @@ fun ShelfTicket(
             ContentTypeLabel(entry.contentType)
             if (entry.isFavorite) {
                 Icon(
-                    imageVector = androidx.compose.material.icons.Icons.Filled.Favorite,
+                    imageVector = Icons.Filled.Favorite,
                     contentDescription = "Favorite",
                     tint = colors.favorite,
                     modifier = Modifier.size(16.dp)
