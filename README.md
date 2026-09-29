@@ -149,10 +149,10 @@ Onboarding, Home, Add Entry, Entry Detail, Edit Entry, Library, Watching, Favori
 
 ## Open in Android Studio
 
-1. Requirements: **JDK 17** and a recent Android Studio with the **Android 15 / API 35** platform and **Build Tools 35.0.0** installed.
+1. Requirements: **JDK 17** and a recent Android Studio with the **Android 16 / API 36** platform and **Build Tools 35.0.0** installed.
 2. `File → Open…` and select the `MovieNestLog` folder.
 3. Android Studio will generate the Gradle wrapper on first sync. If you use the command line first, run `gradle wrapper --gradle-version 8.9` once to create `gradlew`.
-4. Configuration: `compileSdk = 35`, `targetSdk = 35`, `minSdk = 26` (satisfies "24 or higher"; supports Android 15 and newer). Portrait only. Edge-to-edge with safe insets and visible system bars.
+4. Configuration: `compileSdk = 36`, `targetSdk = 36`, `minSdk = 26` (satisfies "24 or higher"; supports Android 16 and newer). Portrait only. Edge-to-edge with safe insets and visible system bars.
 
 ### 16 KB memory page-size compatibility
 
@@ -225,7 +225,7 @@ Only the **AAB** should be uploaded to Google Play as the production artifact.
 
 ## GitHub Actions
 
-`.github/workflows/android-build.yml` runs on push to `main` and via `workflow_dispatch`. It checks out the repo, sets up JDK 17 and the Android SDK (Platform 35, Build Tools 35.0.0), decodes the keystore, builds the signed release APK and AAB, verifies the certificate with `apksigner`, fails if the output contains `CN=Android Debug`, and uploads the APK and AAB as artifacts. Passwords and the Base64 keystore are never printed, and the decoded keystore stays only on the disposable runner. No mandatory emulator smoke test runs on free runners.
+`.github/workflows/android-build.yml` runs on push to `main` and via `workflow_dispatch`. It checks out the repo, sets up JDK 17 and the Android SDK (Platform 36, Build Tools 35.0.0), decodes the keystore, builds the signed release APK and AAB, verifies the certificate with `apksigner`, fails if the output contains `CN=Android Debug`, and uploads the APK and AAB as artifacts. Passwords and the Base64 keystore are never printed, and the decoded keystore stays only on the disposable runner. No mandatory emulator smoke test runs on free runners.
 
 ### Required GitHub Secrets
 

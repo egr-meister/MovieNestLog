@@ -25,9 +25,9 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install SDK Platform 35 and Build Tools 35.0.0
+      - name: Install SDK Platform 36 and Build Tools 35.0.0
         run: |
-          yes | sdkmanager "platforms;android-35" "build-tools;35.0.0" >/dev/null
+          yes | sdkmanager "platforms;android-36" "build-tools;35.0.0" >/dev/null
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4

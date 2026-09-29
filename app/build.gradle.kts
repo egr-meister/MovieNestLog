@@ -20,12 +20,12 @@ fun signingValue(propKey: String, envKey: String): String? =
 
 android {
     namespace = "com.movienest.log"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.movienest.log"
         minSdk = 26
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
 
