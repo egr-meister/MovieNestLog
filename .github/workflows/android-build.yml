@@ -24,10 +24,15 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        # Tolerate the action's own license step exiting non-zero on newer runner
+        # images; command-line tools are already installed and we accept licenses
+        # and install packages explicitly in the next step.
+        continue-on-error: true
 
-      - name: Install SDK Platform 36 and Build Tools 35.0.0
+      - name: Accept licenses and install SDK Platform 36 + Build Tools 35.0.0
         run: |
-          yes | sdkmanager "platforms;android-36" "build-tools;35.0.0" >/dev/null
+          yes | sdkmanager --licenses >/dev/null 2>&1 || true
+          yes | sdkmanager "platform-tools" "platforms;android-36" "build-tools;35.0.0" >/dev/null
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
